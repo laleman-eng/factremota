@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="FactRemota" Category="Project" Bounds="257.821666666667,0,81.81,25.96" Label="FactRemota" />
+    <Node Id="Newtonsoft.Json 7.0.1" Category="Package" Bounds="0,55.96,135.453333333333,25.96" Label="Newtonsoft.Json 7.0.1" />
+    <Node Id="Zen.Barcode.Rendering.Framework 3.1.10729.1" Category="Package" Bounds="352.526666666667,68.96,266.4,25.96" Label="Zen.Barcode.Rendering.Framework 3.1.10729.1" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="FactRemota" Target="Newtonsoft.Json 7.0.1" Category="Installed Package" Bounds="130.054436240967,22.8892805541583,127.767217811768,30.9517483292569" />
+    <Link Source="FactRemota" Target="Zen.Barcode.Rendering.Framework 3.1.10729.1" Category="Installed Package" Bounds="333.924742040212,25.9599995422363,108.159704905778,39.8860577363314" />
+  </Links>
+  <Categories>
+    <Category Id="Installed Package" />
+    <Category Id="Package" />
+    <Category Id="Project" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Project" ValueLabel="True">
+      <Condition Expression="HasCategory('Project')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+  </Styles>
+</DirectedGraph>
