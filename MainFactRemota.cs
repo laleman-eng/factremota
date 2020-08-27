@@ -14,6 +14,7 @@ namespace FactRemota
         {
             globals Glob = new globals();
             globals.gpLogFile = "Log_FE.log";
+            globals.Debug = true;
 
             try
             {
@@ -37,12 +38,12 @@ namespace FactRemota
 
     class DoIt
     {
-        const string version = "2.30.09";
+        const string version = "2.30.10";
 
         string _TipoDoc = "";
         int _NumDoc = -1;
-        string _RUTEmisor = "";
-        string _Local = "";
+        string _RUTEmisor = "14147842-7";
+        string _Local = "sucursal1";
 
         public void verificarParametros(string[] args)
         {
@@ -75,10 +76,10 @@ namespace FactRemota
                         case "-D":
                             if (i + 1 <= args.Count() - 1)
                                 i++;
-                            if ((args[i] == "F") || (args[i] == "B") || (args[i] == "NC") || (args[i] == "FR") || (args[i] == "GD"))
+                            if ((args[i] == "F") || (args[i] == "B") || (args[i] == "NC") || (args[i] == "FR") || (args[i] == "GD") || (args[i] == "FE") || (args[i] == "BE")) 
                                 _TipoDoc = args[i];
                             else
-                                throw new Exception("Parametro invalido: -d " + args[i] + " - Valores permitidos  Factura F, Factura de reserva FR, Boleta B, Guia de despacho GD, Nota de Credito NC ");
+                                throw new Exception("Parametro invalido: -d " + args[i] + " - Valores permitidos  Factura F, Factura de reserva FR, Boleta B, Guia de despacho GD, Nota de Credito NC, Factura Exenta FE, Boleta Exenta BE ");
                             break;
                         case "-L":
                             if (i + 1 <= args.Count() - 1)
@@ -176,7 +177,7 @@ namespace FactRemota
             Console.WriteLine("");
             Console.WriteLine("Versión : " + version);
             Console.WriteLine("");
-            Console.WriteLine(" Tipos de documento: Factura F, Factura de reserva FR, Guia de despacho GD, para Boleta B , para Nota de Credito NC");
+            Console.WriteLine(" Tipos de documento: Factura F, Factura de reserva FR, Guia de despacho GD, para Boleta B , para Nota de Credito NC, Factura Exenta FE, Boleta Exenta BE ");
             Console.WriteLine("");
             Console.WriteLine(" Uso normal :");
             Console.WriteLine("   FactRemota.exe -d <Tipo documento> -n <numero documento> -R <Rut del emisor> -L <Local> ");
@@ -347,7 +348,7 @@ namespace FactRemota
             globals.gpURLCAFSucursal = URLCAFSuc;
             globals.gpURLCAFRangoBoleta = URLRngBol;
             globals.gpURLCAFRangoDTE = URLRngDTE;
-
+            
             sErr = Utils.SaveParams(globals.gpRUTEmisor);
             if ( "" != sErr )
             {
@@ -386,7 +387,7 @@ namespace FactRemota
                     throw new Exception("E300 - RUT enviado no correspode al del emisor - " + _RUTEmisor);
                 if (_Local != globals.gpLocal)
                     throw new Exception("E301 - Local enviado no correspode al asignado a caja - " + _Local);
-                if ((_TipoDoc != "F") && (_TipoDoc != "B") && (_TipoDoc != "NC") && (_TipoDoc != "GD") && (_TipoDoc != "FR"))
+                if ((_TipoDoc != "F") && (_TipoDoc != "B") && (_TipoDoc != "NC") && (_TipoDoc != "GD") && (_TipoDoc != "FR") && (_TipoDoc != "BE") && (_TipoDoc != "FE"))
                     throw new Exception("E302 - Tipo de documento : " + _TipoDoc + " invalido");
                 if ((_NumDoc < 0) && (TipoValidacion != "OF") && (TipoValidacion != "REEN"))
                     throw new Exception("E303 - Numero de documento : " + _NumDoc.ToString() + " invalido");

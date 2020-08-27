@@ -21,8 +21,14 @@ namespace FactRemota
 
         public PrintPDF()
         {
-            try {PrinterDefXml = Utils.CargarXML("FormatoFactura.xml");}
-            catch {throw new Exception("E701 - Formato de documento no definido.");}
+            try 
+            {
+                PrinterDefXml = Utils.CargarXML("FormatoFactura.xml");
+            }
+            catch 
+            {
+                throw new Exception("E701 - Formato de documento no definido.");
+            }
         }
 
         public void DoPrint(DTEDoc DteDoc, XmlDocument pTimbreXml)

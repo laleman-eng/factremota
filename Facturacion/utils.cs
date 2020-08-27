@@ -509,6 +509,10 @@ namespace FactRemota
                 oTipoDTE = "61";
             else if (p_TipoDoc == "GD")
                 oTipoDTE = "52";
+            else if (p_TipoDoc == "FE")
+                oTipoDTE = "34";
+            else if (p_TipoDoc == "BE")
+                oTipoDTE = "41";
             else
                 throw new Exception("Tipo documento (DTE) invalido: " + p_TipoDoc + " - Valores permitidos: Factura F, Factura reserva FR, Boleta B, Nota de Credito NC  y Guía de despacho GD");
 
@@ -556,7 +560,7 @@ namespace FactRemota
                 oCAFParamsJson.Rut = globals.gpRUTEmisor.Replace("-","");
                 postData = JsonConvert.SerializeObject(oCAFParamsJson);
 
-                if (oTipoDTE == "39")
+                if (oTipoDTE == "39" || oTipoDTE == "41")
                     foliosStr = Utils.sendRequest(globals.gpURLCAFRangoBoleta, postData, "text/json");
                 else
                     foliosStr = Utils.sendRequest(globals.gpURLCAFRangoDTE, postData, "text/json");

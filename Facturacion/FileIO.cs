@@ -25,7 +25,10 @@ namespace FactRemota
                 throw new Exception("NC enviada y tipo DTE distinto a 61");
             else if ((p_TipoDTE == "GD") && (oDteDoc.Encabezado.IdDoc.TipoDTE != 52))
                 throw new Exception("Guía de despacho enviada y tipo DTE distinto a 52");
-
+            else if ((p_TipoDTE == "FE") && (oDteDoc.Encabezado.IdDoc.TipoDTE != 34))
+                throw new Exception("Factura Exenta enviada y tipo DTE distinto a 34 ");
+            else if ((p_TipoDTE == "BE") && (oDteDoc.Encabezado.IdDoc.TipoDTE != 41))
+                throw new Exception("Boleta Exenta enviada y tipo DTE distinto a 41 ");
             // Corregir Fechas y RUT
             if (oDteDoc.Encabezado.IdDoc.FchEmis.Length > 10)
                 oDteDoc.Encabezado.IdDoc.FchEmis = oDteDoc.Encabezado.IdDoc.FchEmis.Substring(0, 10);
