@@ -15,7 +15,7 @@ namespace FactRemota
         {
             string respuesta;
 
-            if (oTipoDTE == 39)
+            if (oTipoDTE == 39 || oTipoDTE == 41)
                 respuesta = Utils.sendRequest(globals.gpURLEnvioBol, docEnviarjson, "application/json");
             else
                 respuesta = Utils.sendRequest(globals.gpURLEnvioDoc, docEnviarjson, "application/json");

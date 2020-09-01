@@ -627,7 +627,7 @@ namespace FactRemota
             {
                 ini = f.IndexOf("\\_CAF_" + oTipoDoc + "_");
 
-                if ((oTipoDoc == "NC") || (oTipoDoc == "GD"))
+                if ((oTipoDoc == "NC") || (oTipoDoc == "GD") || (oTipoDoc == "BE") || (oTipoDoc == "FE"))
                     ini = f.IndexOf('_', ini) + 8;
                 else
                     ini = f.IndexOf('_', ini) + 7;

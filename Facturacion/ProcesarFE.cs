@@ -105,7 +105,7 @@ namespace FactRemota
                 nErr = -410;
 
                 String docaEnviar;
-                if (oDteDoc.Encabezado.IdDoc.TipoDTE == 39)
+                if (oDteDoc.Encabezado.IdDoc.TipoDTE == 39 || oDteDoc.Encabezado.IdDoc.TipoDTE == 41)
                     docaEnviar = oEnviarDTE.PrepararBoletaJson(oDteDoc, oXmlTimbre);
                 else
                     docaEnviar = oEnviarDTE.PrepararDTEJson(oDteDoc, oXmlTimbre);
@@ -242,7 +242,7 @@ namespace FactRemota
         {
             bool Ok = false;
 
-            if (oDteDoc.Encabezado.Totales.MntExe > 0.0M)
+            if (oDteDoc.Encabezado.Totales.MntExe > 0.0M && oDteDoc.Encabezado.IdDoc.TipoDTE != 41 && oDteDoc.Encabezado.IdDoc.TipoDTE != 34)  //# no cubierto escenario con lineas afectas y exentas
                 throw new Exception("MntExe - debe ser 0.0 ");
             for (int i = 0; i < oDteDoc.DscRcgGlobal.Count; i++)
             {
