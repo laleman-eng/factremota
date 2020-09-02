@@ -287,6 +287,8 @@ namespace FactRemota
             bool oHayNC = false;
             bool oHayGuia = false;
             bool oHayFacturaR = false;
+            bool oHayFacturaE = false;
+            bool oHayBoletaE = false;
 
             try
             {
@@ -312,7 +314,13 @@ namespace FactRemota
             globals.oLog.LogMsg("Reenvio de Facturas reserva", "A", "I");
             oHayBoleta = ProcesarEnvio("FR", p_Local, p_RUTEmisor);
 
-            return oHayFactura || oHayBoleta || oHayNC || oHayGuia || oHayFacturaR; 
+            globals.oLog.LogMsg("Reenvio de Facturas Exentas", "A", "I");
+            oHayFacturaE = ProcesarEnvio("FE", p_Local, p_RUTEmisor);
+
+            globals.oLog.LogMsg("Reenvio de Boletas Exentas", "A", "I");
+            oHayBoletaE = ProcesarEnvio("BE", p_Local, p_RUTEmisor);
+
+            return oHayFactura || oHayBoleta || oHayNC || oHayGuia || oHayFacturaR || oHayFacturaE || oHayBoletaE ; 
         }
 
         public bool ProcesarEnvio(String p_TipoDTE, String p_Local, String p_RUTEmisor)

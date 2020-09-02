@@ -40,10 +40,15 @@ namespace FactRemota
     {
         const string version = "2.30.10";
 
+        //string _TipoDoc = "";
+        //int _NumDoc = -1;
+        //string _RUTEmisor = "14147842-7";
+        //string _Local = "sucursal1";
+
         string _TipoDoc = "";
         int _NumDoc = -1;
-        string _RUTEmisor = "14147842-7";
-        string _Local = "sucursal1";
+        string _RUTEmisor = "";
+        string _Local = "";
 
         public void verificarParametros(string[] args)
         {
