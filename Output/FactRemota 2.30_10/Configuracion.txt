@@ -1,0 +1,8 @@
+usuario: vk
+password: qwe123
+
+URL Envio de documentos (DTE/Generar):   http://rest1.easydoc.cl/api/Dte/Generar
+URL Envio de Boletas (Boleta/Generar):   http://rest1.easydoc.cl/api/Boleta/Generar
+URL CAF Sucursal:                        http://rest1.easydoc.cl/api/Visualk/CafSucursal
+URL CAF Rango Boletas:                   http://rest1.easydoc.cl/api/Visualk/CafRangoBoleta
+URL CAF Rango DTE:                       http://rest1.easydoc.cl/api/Visualk/CafRangoDte

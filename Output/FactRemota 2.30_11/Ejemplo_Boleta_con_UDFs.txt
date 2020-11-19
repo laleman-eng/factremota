@@ -1,0 +1,109 @@
+{
+  "Encabezado": {
+    "IdDoc": {
+      "TipoDTE": 39,
+      "Folio": 1301,
+      "FchEmis": "2018-12-13T00:00:00.000Z",
+      "MedioPago": null,
+      "FchVenc": "2018-12-13T00:00:00.000Z"
+    },
+    "Emisor": {
+      "RUTEmisor": "77740500-4",
+      "RznSoc": null,
+      "GiroEmis": null,
+      "CdgSIISucur": 0,
+      "DirOrigen": "TIENDA GERONIMO DE ALDERETE Ger?nimo de Alderete 1355",
+      "CmnaOrigen": "Vitacura",
+      "CiudadOrigen": "Santiago",
+      "CdgVendedor": null
+    },
+    "Receptor": {
+      "RUTRecep": "",
+      "RznSocRecep": "GLAM S.A. (G. DE ALDERETE)",
+      "GiroRecep": null,
+      "CorreoRecep": null,
+      "DirRecep": "",
+      "CmnaRecep": "",
+      "CiudadRecep": ""
+    },
+    "Totales": {
+      "MntNeto": 3345,
+      "MntExe": 0,
+      "TasaIVA": 0,
+      "IVA": 635,
+      "ImptoReten": null,
+      "MntTotal": 3980
+    },
+    "UDFs": [
+      {
+        "Codigo": "Linea",
+        "Descripcion": "123456-DB-12389846 123 124   121212--qweqw",
+        "Valor": 0
+      },
+      {
+        "Codigo": "Linea 2",
+        "Descripcion": "123457-qwe---as123123",
+        "Valor": 1
+      }
+    ]
+  },
+  "Detalle": [
+    {
+      "NroLinDet": 1,
+      "CdgItem": [
+        {
+          "TpoCodigo": "Interna",
+          "VlrCodigo": "1004108-2"
+        }
+      ],
+      "IndExe": 0,
+      "NmbItem": "SET MAQUILLAJE GLAM 5 COLORES  1 UNI",
+      "DscItem": "",
+      "QtyItem": 2,
+      "UnmdItem": "",
+      "FchElabor": null,
+      "FchVencim": null,
+      "PrcItem": 1990,
+      "DescuentoPct": 0,
+      "DescuentoMonto": 0,
+      "RecargoPct": 0,
+      "RecargoMonto": 0,
+      "CodImpAdic": null,
+      "MontoItem": 3980,
+      "UDFs": [
+      {
+        "Codigo": "CB",
+        "Descripcion": "123456-DB",
+        "Valor": 0
+      },
+      {
+        "Codigo": "",
+        "Descripcion": "123457-CB",
+        "Valor": 1
+      },
+      {
+        "Codigo": "L3Linea-3",
+        "Descripcion": "123457-CB",
+        "Valor": 1
+      }
+    ]
+    }
+  ],
+  "DscRcgGlobal": [
+    {
+      "NroLinDR": 1,
+      "TpoMov": "D",
+      "GlosaDR": "Descuento",
+      "TpoValor": "$",
+      "ValorDR": 0
+    },
+    {
+      "NroLinDR": 2,
+      "TpoMov": "D",
+      "GlosaDR": "Descuento exento",
+      "TpoValor": "$",
+      "ValorDR": 0
+    }
+  ],
+  "Referencia": []
+}

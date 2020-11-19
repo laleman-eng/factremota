@@ -38,7 +38,7 @@ namespace FactRemota
 
     class DoIt
     {
-        const string version = "2.30.10";
+        const string version = "2.30.11";
 
         //string _TipoDoc = "";
         //int _NumDoc = -1;
