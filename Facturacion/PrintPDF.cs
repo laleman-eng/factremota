@@ -55,16 +55,16 @@ namespace FactRemota
             if (DteDoc.Encabezado.IdDoc.TipoDTE == 33)
             {
                 docToPrint.PrintPage += new PrintPageEventHandler(this.PrintFactura);
-                //PrintRecibeConforme = true;
-                //docToPrint.Print();
+                PrintRecibeConforme = true;
+                docToPrint.Print();
                 PrintRecibeConforme = false;
                 docToPrint.Print();
             }
             else if (DteDoc.Encabezado.IdDoc.TipoDTE == 34)
             {
                 docToPrint.PrintPage += new PrintPageEventHandler(this.PrintFacturaE);
-                //PrintRecibeConforme = true;
-                //docToPrint.Print();
+                PrintRecibeConforme = true;
+                docToPrint.Print();
                 PrintRecibeConforme = false;
                 docToPrint.Print();
             }

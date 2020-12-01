@@ -141,7 +141,8 @@ namespace FactRemota
             }
 
             oDoc.Documento.Extra = new oExtraDTE();
-            oDoc.Documento.Extra.FolioInterno = globals.gpInternalDocNum;
+            oDoc.Documento.Extra.FolioInterno = 0;
+            //oDoc.Documento.Extra.FolioInterno = globals.gpInternalDocNum;
             oDoc.Documento.Extra.Extra1 = globals.gpLocal;
             oDoc.Documento.Extra.Extra2 = "";
             oDoc.Documento.Extra.Extra3 = "";
@@ -254,7 +255,8 @@ namespace FactRemota
 
             oDoc.Documento.Extra = new oExtraBoleta();
             oDoc.Documento.Extra.Email = oDteDoc.Encabezado.Receptor.CorreoRecep;
-            oDoc.Documento.Extra.FolioInterno = globals.gpInternalDocNum;
+            oDoc.Documento.Extra.FolioInterno = 0;
+            //oDoc.Documento.Extra.FolioInterno = globals.gpInternalDocNum;
             oDoc.Documento.Extra.Extra1 = globals.gpLocal;
             oDoc.Documento.Extra.Extra2 = "";
             oDoc.Documento.Extra.Extra3 = "";
