@@ -43,6 +43,7 @@ namespace FactRemota
             oDoc.Documento.Encabezado.IdDoc.FchEmis   = oDteDoc.Encabezado.IdDoc.FchEmis;
             oDoc.Documento.Encabezado.IdDoc.MedioPago = oDteDoc.Encabezado.IdDoc.MedioPago;
             oDoc.Documento.Encabezado.IdDoc.FchVenc   = oDteDoc.Encabezado.IdDoc.FchVenc;
+            oDoc.Documento.Encabezado.IdDoc.IndTraslado = 1;
 
             oDoc.Documento.Encabezado.Emisor = new oEmisor();
             oDoc.Documento.Encabezado.Emisor.RUTEmisor    = oDteDoc.Encabezado.Emisor.RUTEmisor; 

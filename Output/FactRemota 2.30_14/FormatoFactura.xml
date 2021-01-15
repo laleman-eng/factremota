@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Format>
+    <Epson Nombre="EPSON TM-T88V Receipt"/>
+	<Printer Nombre="Microsoft XPS Document Writer">
+        <Fonts>
+            <Cabecera Font="Times New Roman" Size="9" Bold="true" />
+            <Titulo Font="Arial" Size="9" Bold="true" />
+            <Detalle Font="Arial" Size="8" Bold="false" />
+        </Fonts>
+        <Cabecera>
+            <Margen>3</Margen>
+            <Height>15</Height>
+            <Width>250</Width>
+            <SII>S.I.I. - SANTIAGO CENTRO</SII>
+            <SIIResolucion1>Timbre Electrónico SII - www.sii.cl</SIIResolucion1>
+            <SIIResolucion2>Res. 80 del 22 de Agosto 2014 - Verifique document</SIIResolucion2>
+            <SaltoACliente>10</SaltoACliente>
+        </Cabecera>
+        <Emisor>
+            <Logo>NO</Logo>
+            <Empresa>ELECTRONICA CASA ROYAL LIMITADA</Empresa>
+            <Matriz>Casa Matriz: Av. Libertador Bernardo O'Higgins 845</Matriz>
+            <Matriz2>Santiago Centro, Santiago</Matriz2>
+            <Giro>GIRO: ARTICULOS ELECTRICOS, ELECTRONICOS, HOGAR, OFICINA Y OTROS</Giro>
+            <Sucursal>Sucursal: Av. Libertador Bernardo OHiggins 971</Sucursal>
+            <Vendedor>Si</Vendedor>
+            <TitVendedor>Vend: </TitVendedor>
+        </Emisor>
+        <TituloDetalle>
+            <Salto>15</Salto>
+            <TextoLeft Texto="Cant / P. Unit / Código " />
+            <TextoRight Texto="Valor" />
+            <TextoLinea2 Texto="Descripción" />
+            <SaltoALinea>5</SaltoALinea>
+			<LineaSeparacion>Si</LineaSeparacion>
+        </TituloDetalle>
+        <Linea>
+            <Cod>120</Cod>
+        </Linea>
+        <Totales>
+            <Separacion>20</Separacion>
+            <SubTotal Texto="SUBTOTAL" Col="150" />
+            <Descuento Texto="DESCUENTO" Col="150" />
+			<Recargo Texto="RECARGO" Col="150" />
+            <Neto Texto="NETO" Col="150" />
+            <IVA Texto="IVA" Col="150" />
+            <Total Texto="TOTAL" Col="150" />
+        </Totales>
+        <MontoEscrito>
+            <Separacion>20</Separacion>
+            <Pre Texto="Son : " />
+            <Pos Texto="Pesos." />
+            <Height>10</Height>
+        </MontoEscrito>
+        <PDF417>
+            <Separacion>0</Separacion>
+            <Height>250</Height>
+        </PDF417>
+    </Printer>
+    <Impuestos>
+        <Impuesto Codigo="18" Texto="ICA 5%" />
+        <Impuesto Codigo="19" Texto="IHA 12%" />
+        <Impuesto Codigo="24" Texto="ILALIC 31,5%" />
+        <Impuesto Codigo="25" Texto="ILAVIN 20,5%" />
+        <Impuesto Codigo="26" Texto="ILACER 20,5%" />
+        <Impuesto Codigo="27" Texto="IABA 10%" />
+        <Impuesto Codigo="271" Texto="IABA 18%" />
+        <Impuesto Codigo="ND" Texto="Otros" />
+    </Impuestos>
+	<FormatoArchivoEnviadoPOS>
+		<RUT Separador="" />
+	</FormatoArchivoEnviadoPOS>
+	<UDF>
+		<BarCodeHeight>60</BarCodeHeight>
+		<Boleta>
+			<Lineas>
+				<Linea_1_C Print="No" />
+				<Linea_1_D Print="No" Modo="Texto" Align="Center" LeftMg="0" />
+				<Linea_1_V Print="No" Modo="Texto"   Align="Right"  LeftMg="0" />
+				<Linea_2_C Print="No" Modo="Texto"   Align="Left"   LeftMg="0"   />
+				<Linea_2_D Print="No" Modo="Texto"   Align="Center" LeftMg="0" />
+				<Linea_2_V Print="No" Modo="Texto"   Align="Right"  LeftMg="300"   />
+				<Linea_3_C Print="No" Modo="Texto"   Align="Left"   LeftMg="200"   />
+				<Linea_3_D Print="No" Modo="Texto"   Align="Center" LeftMg="300" />
+				<Linea_3_V Print="No" Modo="Texto"   Align="Right"  LeftMg="0"   />
+			</Lineas>	
+			<General>
+				<Linea_1_C Print="No" />
+				<Linea_1_D Print="Si" Modo="BarCode" Align="Center" LeftMg="0" />
+				<Linea_1_V Print="No" Modo="Texto"   Align="Right"  LeftMg="0" />
+				<Linea_2_C Print="Si" Modo="Texto"   Align="Left"   LeftMg="0"   />
+				<Linea_2_D Print="Si" Modo="Texto"   Align="Center" LeftMg="0" />
+				<Linea_2_V Print="No" Modo="Texto"   Align="Left"   LeftMg="0"   />
+			</General>
+		</Boleta>
+		<Factura>
+			<Lineas>
+				<Linea_1_C Print="No" />
+				<Linea_1_D Print="No" Modo="BarCode" Align="Center" LeftMg="0" />
+				<Linea_1_V Print="No" Modo="Texto"   Align="Right"  LeftMg="0" />
+				<Linea_2_C Print="No" Modo="Texto"   Align="Left"   LeftMg="0"   />
+				<Linea_2_D Print="No" Modo="Texto"   Align="Center" LeftMg="0" />
+				<Linea_2_V Print="No" Modo="Texto"   Align="Right"  LeftMg="300"   />
+				<Linea_3_C Print="No" Modo="Texto"   Align="Left"   LeftMg="200"   />
+				<Linea_3_D Print="No" Modo="Texto"   Align="Center" LeftMg="300" />
+				<Linea_3_V Print="No" Modo="Texto"   Align="Right"  LeftMg="0"   />
+			</Lineas>	
+			<General>
+				<Linea_1_C Print="No" />
+				<Linea_1_D Print="Si" Modo="BarCode" Align="Center" LeftMg="0" />
+				<Linea_1_V Print="No" Modo="Texto"   Align="Right"  LeftMg="0" />
+				<Linea_2_C Print="Si" Modo="Texto"   Align="Left"   LeftMg="0"   />
+				<Linea_2_D Print="Si" Modo="Texto"   Align="Center" LeftMg="0" />
+				<Linea_2_V Print="No" Modo="Texto"   Align="Left"   LeftMg="0"   />
+			</General>
+		</Factura>
+		<NC>
+			<Lineas>
+				<Linea_1_C Print="No" />
+				<Linea_1_D Print="No" Modo="BarCode" Align="Center" LeftMg="0" />
+				<Linea_1_V Print="No" Modo="Texto"   Align="Right"  LeftMg="0" />
+				<Linea_2_C Print="No" Modo="Texto"   Align="Left"   LeftMg="0"   />
+				<Linea_2_D Print="No" Modo="Texto"   Align="Center" LeftMg="0" />
+				<Linea_2_V Print="No" Modo="Texto"   Align="Right"  LeftMg="300"   />
+				<Linea_3_C Print="No" Modo="Texto"   Align="Left"   LeftMg="200"   />
+				<Linea_3_D Print="No" Modo="Texto"   Align="Center" LeftMg="300" />
+				<Linea_3_V Print="No" Modo="Texto"   Align="Right"  LeftMg="0"   />
+			</Lineas>	
+			<General>
+				<Linea_1_C Print="No" />
+				<Linea_1_D Print="Si" Modo="BarCode" Align="Center" LeftMg="0" />
+				<Linea_1_V Print="No" Modo="Texto"   Align="Right"  LeftMg="0" />
+				<Linea_2_C Print="Si" Modo="Texto"   Align="Left"   LeftMg="0"   />
+				<Linea_2_D Print="Si" Modo="Texto"   Align="Center" LeftMg="0" />
+				<Linea_2_V Print="No" Modo="Texto"   Align="Left"   LeftMg="0"   />
+			</General>
+		</NC>
+	</UDF>
+</Format>

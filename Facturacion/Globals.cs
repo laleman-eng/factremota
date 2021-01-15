@@ -151,11 +151,12 @@ namespace FactRemota
 
     public class oIdDoc
     {
-        public int    TipoDTE { get; set; }         //  3
-        public int    Folio   { get; set; }         //  10
-        public string FchEmis { get; set; }         //  10
+        public int    TipoDTE   { get; set; }         //  3
+        public int    Folio     { get; set; }         //  10
+        public string FchEmis   { get; set; }         //  10
         public string MedioPago { get; set; }       //  2
-        public string FchVenc { get; set; }         //  10
+        public string FchVenc   { get; set; }         //  10
+        public int    IndTraslado  { get; set; }   
     }
 
     public class oEmisor
