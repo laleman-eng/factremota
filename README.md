@@ -6,7 +6,7 @@ La instalación del Addon, se realiza según el procedimiento estándar de SAP B
 ## Documentación
 
 ## Versionado
-Chnge log
+2.30.11
 ##Autor
 Antonio Sanchez
 ## Licencias
